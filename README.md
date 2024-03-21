@@ -69,11 +69,13 @@ The results are then integrated into Tableau to generate graphs and charts illus
 
 ![Screenshot 2024-03-21 014616](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/7d050f09-ec47-4f96-b207-1e671812aea3)
 
-#### Visusalsations
+#### Visusalisations
 
 All the data was outputted from the models in to separate CSV files. These were then imported in to Tableau and joined to the main csv on various coloumns but mainly Song name. This joining allowed for the interactive functionality to work in Tableau where visusalsations could be linked to each other. 
 
 ![Screenshot 2024-03-21 173815](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/f9e4017e-412c-4117-8c65-8f7e5a79b0da)
+
+[Tableau Visusalisations](https://public.tableau.com/app/profile/rowan.feist/viz/Taylor_Group4/Dashboard1?publish=yes)
 
 #### Results
 
