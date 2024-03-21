@@ -32,6 +32,8 @@ There was some cleaning of the data that needed to take place with some incorrec
 
 The data was obtained from two Kaggle Datasets and the streaming numbers were obtained from a separate website then joined together. 
 
+![Screenshot 2024-03-21 173647](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/0f43fac4-6e52-4947-8867-3623138e78cc)
+
 ##### Kaggle Datasets:
 
 [Kaggle Dataset 1](https://www.kaggle.com/datasets/jarredpriester/taylor-swift-spotify-dataset?select=taylor_swift_spotify.csv)
@@ -48,10 +50,14 @@ The data was obtained from two Kaggle Datasets and the streaming numbers were ob
 The process of creating the "Ideal Song" involves gathering a comprehensive dataset of songs and their attributes, followed by preprocessing and feature engineering. This dataset is then analyzed using a Random Forest model to determine the importance of each attribute in predicting the streaming numbers of songs. Subsequently, a Linear Regression model is employed to predict the streaming numbers based on the attribute importance scores. Once predicted, a similarity score between each song and the "ideal" song is calculated, normalized to a 0-100 scale, and used to rank the songs. 
 Visualizations in Tableau are then created to display the songs categorized as "perfect" based on their attributes and similarity scores. This iterative process combines machine learning techniques with data visualization to uncover insights into the characteristics contributing to a song's popularity, refining the models based on feedback and new data for continual improvement.
 
+![Screenshot 2024-03-21 014335](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/07190f31-b091-45f3-8453-36fde0288888)
+
 ##### The Mood of a Song
 The process of mood classification and song recommendation involves utilizing a dataset where each song is classified into categories such as Happy, Sad, Energetic, or Calm based on its valence and energy attributes. Initially, the dataset is preprocessed to handle missing values and encode categorical variables if necessary. Then, a Random Forest model is trained to classify songs into these mood categories and predict the mood of any song in the dataset.
 Following the model training, interactive visualizations are constructed around this model. Users can select any song from the dataset, and the visualization will display similar songs with the same mood. This recommendation system leverages the Random Forest model's predictions to identify songs with similar valence and energy attributes. Additionally, users can choose a particular mood they desire, and the visualization will play songs from the dataset that match that mood, providing an immersive and personalized music listening experience.
 Overall, this approach combines machine learning classification techniques with interactive data visualizations to enable users to explore songs based on their mood preferences, facilitating discovery and enjoyment of music tailored to their emotional preferences.
+
+![Screenshot 2024-03-21 173617](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/bf5ca139-36f1-4186-b22d-2ff50e6556fb)
 
 ##### Future Predictions
 
@@ -59,9 +65,13 @@ A linear regression model was constructed to predict the future success of album
 The linear regression model is trained by fitting the data to understand the relationship between the provided features and album popularity. After fitting the model, predictions are made for future album popularity, considering a span of 18 years beyond the existing dataset. These predictions are then organized into a DataFrame for further analysis and visualization. 
 The results are then integrated into Tableau to generate graphs and charts illustrating the projected success levels of different albums over the specified time period. By using this predictive model we can gain insights into potential trends in album popularity.
 
+![Screenshot 2024-03-21 014616](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/7d050f09-ec47-4f96-b207-1e671812aea3)
+
 #### Visusalsations
 
 All the data was outputted from the models in to separate CSV files. These were then imported in to Tableau and joined to the main csv on various coloumns but mainly Song name. This joining allowed for the interactive functionality to work in Tableau where visusalsations could be linked to each other. 
+
+![Screenshot 2024-03-21 173815](https://github.com/RFEIST83/Group-4---Project-4/assets/145405658/f9e4017e-412c-4117-8c65-8f7e5a79b0da)
 
 #### Results
 
