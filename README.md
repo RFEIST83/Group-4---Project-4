@@ -12,6 +12,8 @@ The Tools Used
 * SQL
 * Tableau
 
+[Presentation](https://docs.google.com/presentation/d/11cICYBtK5bRw-mqGCVPRqK5yJP9isLmWx1nqHucEIG0/edit#slide=id.p)  
+
 #### The Data
 
 The data consisted of Spotify data around every song released from 2006 to 2024 including things such as song name, album, duration, release date and most importantly the attributes Spotify had assigned to each song track. These attricbutes included:
