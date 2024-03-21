@@ -43,5 +43,30 @@ The data was obtained from two Kaggle Datasets and the streaming numbers were ob
 
 #### The Code
 
-All the datasets were joined together on song name and placed in an SQLite database. From here each of us built multiple models using Linear Regression and Random Forrest to explore the dataset. 
+##### The Ideal Song
+
+The process of creating the "Ideal Song" involves gathering a comprehensive dataset of songs and their attributes, followed by preprocessing and feature engineering. This dataset is then analyzed using a Random Forest model to determine the importance of each attribute in predicting the streaming numbers of songs. Subsequently, a Linear Regression model is employed to predict the streaming numbers based on the attribute importance scores. Once predicted, a similarity score between each song and the "ideal" song is calculated, normalized to a 0-100 scale, and used to rank the songs. 
+Visualizations in Tableau are then created to display the songs categorized as "perfect" based on their attributes and similarity scores. This iterative process combines machine learning techniques with data visualization to uncover insights into the characteristics contributing to a song's popularity, refining the models based on feedback and new data for continual improvement.
+
+##### The Mood of a Song
+The process of mood classification and song recommendation involves utilizing a dataset where each song is classified into categories such as Happy, Sad, Energetic, or Calm based on its valence and energy attributes. Initially, the dataset is preprocessed to handle missing values and encode categorical variables if necessary. Then, a Random Forest model is trained to classify songs into these mood categories and predict the mood of any song in the dataset.
+Following the model training, interactive visualizations are constructed around this model. Users can select any song from the dataset, and the visualization will display similar songs with the same mood. This recommendation system leverages the Random Forest model's predictions to identify songs with similar valence and energy attributes. Additionally, users can choose a particular mood they desire, and the visualization will play songs from the dataset that match that mood, providing an immersive and personalized music listening experience.
+Overall, this approach combines machine learning classification techniques with interactive data visualizations to enable users to explore songs based on their mood preferences, facilitating discovery and enjoyment of music tailored to their emotional preferences.
+
+##### Future Predictions
+
+A linear regression model was constructed to predict the future success of albums by analysing various features such as album name, song name, popularity, release date, total streaming figures, and average daily streaming figures. The dataset spans from 2006 to 2024, with the model aimed at forecasting album success for another 18 years into the future. 
+The linear regression model is trained by fitting the data to understand the relationship between the provided features and album popularity. After fitting the model, predictions are made for future album popularity, considering a span of 18 years beyond the existing dataset. These predictions are then organized into a DataFrame for further analysis and visualization. 
+The results are then integrated into Tableau to generate graphs and charts illustrating the projected success levels of different albums over the specified time period. By using this predictive model we can gain insights into potential trends in album popularity.
+
+#### Visusalsations
+
+All the data was outputted from the models in to separate CSV files. These were then imported in to Tableau and joined to the main csv on various coloumns but mainly Song name. This joining allowed for the interactive functionality to work in Tableau where visusalsations could be linked to each other. 
+
+#### Results
+
+The findings from the model analysis revealed that the speechiness of a song emerged as the most influential factor, closely followed by danceability, duration, valence, volume, tempo, and energy. However, the significance of these attributes doesn't solely lie in their order of importance; it's also about the actual values and their frequency in songs recognized for their popularity. After subjecting this data to the linear regression model, it successfully established the ranking of songs based on these attributes, which are deemed crucial for their success. Despite achieving an impressive accuracy rate of nearly 90%, there were intriguing instances where certain songs, despite aligning with the identified attributes of an ideal song, didn't attain the expected level of success. This suggests the presence of external factors influencing song popularity and underscores the subjective nature of art.
+
+The linear regression model for future predictions was also able to successfully plot the potential future popularity of all albums 18 years in to the future. It showed the already successful albums would continue to increase in popularity over time however there were also some albums that would decrease in popularity most notably are the albums Taylor Swift re-recoreded and the album evermore which bottoms out with a very low score at the bottom of the dataset. 
+
 
